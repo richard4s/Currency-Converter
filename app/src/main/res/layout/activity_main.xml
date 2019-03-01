@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/firstContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+
+        <ImageView
+            android:id="@+id/baseCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/us_sm"
+            />
+
+        <TextView
+            android:id="@+id/baseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/baseCurrency"
+            android:layout_toLeftOf="@+id/baseCurrency"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@color/colorWhiteShade"
+            android:text="USD"
+        />
+
+        <TextView
+            android:id="@+id/baseName"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhiteShade"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="14sp"
+            android:text="American Dollars"
+            android:padding="5dp"
+            android:layout_below="@+id/baseCurrency"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valCurrency"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunitoregular"
+            android:textColor="@color/colorWhiteShade"
+            android:backgroundTint="@color/colorOrangeMin"
+            android:textCursorDrawable="@color/colorWhiteShade"
+            android:textSize="25sp"
+            android:text="$0.00"
+            android:layout_toRightOf="@+id/baseTitle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+
+        <ImageView
+            android:id="@+id/secondCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/euro"
+            />
+
+        <TextView
+            android:id="@+id/secondTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/secondCurrency"
+            android:layout_toLeftOf="@+id/secondCurrency"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@color/colorWhiteShade"
+            android:text="EUR"
+            />
+
+        <TextView
+            android:id="@+id/secondName"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhiteShade"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="14sp"
+            android:text="Euro"
+            android:padding="5dp"
+            android:layout_below="@+id/secondCurrency"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valSecond"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunitoregular"
+            android:textColor="@color/colorWhiteShade"
+            android:backgroundTint="@color/colorOrangeMin"
+            android:textCursorDrawable="@color/colorWhiteShade"
+            android:textSize="25sp"
+            android:text="€0.00"
+            android:layout_toRightOf="@+id/secondTitle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thirdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+
+        <ImageView
+            android:id="@+id/thirdCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/gb_sm"
+            />
+
+        <TextView
+            android:id="@+id/thirdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/thirdCurrency"
+            android:layout_toLeftOf="@+id/thirdCurrency"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@color/colorWhiteShade"
+            android:text="GBP"
+            />
+
+        <TextView
+            android:id="@+id/thirdName"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhiteShade"
+            android:fontFamily="@font/nunitoregular"
+            android:textSize="14sp"
+            android:text="British Pounds"
+            android:padding="5dp"
+            android:layout_below="@+id/thirdCurrency"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valThird"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunitoregular"
+            android:textColor="@color/colorWhiteShade"
+            android:backgroundTint="@color/colorOrangeMin"
+            android:textCursorDrawable="@color/colorWhiteShade"
+            android:textSize="25sp"
+            android:text="£0.00"
+            android:layout_toRightOf="@+id/thirdTitle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/moneyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/mainCurrency"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/colorWhiteShade"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorOrangeMax"
+                android:layout_marginTop="33dp"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <EditText
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOrangeMax"
+                android:id="@+id/enterCurrency"
+                android:layout_toRightOf="@+id/mainCurrency"
+                android:layout_marginTop="42dp"
+                android:fontFamily="@font/nunitoregular"
+                android:maxLength="8"
+                android:textColorHint="@color/colorOrangeMin"
+                android:textColorLink="@color/colorOrangeMin"
+                android:textCursorDrawable="@color/colorOrangeMin"
+                android:inputType="number"
+                android:backgroundTint="@color/colorOrangeMin"
+                android:hint="Enter Currency"/>
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/resetBtn"
+                android:layout_below="@+id/enterCurrency"
+                android:background="@drawable/gradient"
+                android:text="RESET"
+                android:textColor="@color/colorWhiteShade"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhiteGray"
+                android:layout_below="@+id/resetBtn"
+                android:layout_centerHorizontal="true"
+                android:text="Please use the *RESET* button"/>
+        </RelativeLayout>
+
+</LinearLayout>
